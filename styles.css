@@ -329,7 +329,7 @@ nav.s .ham span {
   display: none;
   position: fixed;
   inset: 0;
-  background: #fff;
+  background: #000;
   z-index: 998;
   flex-direction: column;
   align-items: center;
@@ -343,11 +343,11 @@ nav.s .ham span {
 
 .mm a {
   font-family: 'Barlow Condensed', sans-serif;
-  font-size: 2.4rem;
+  font-size: 1.5rem;
   font-weight: 700;
-  text-transform: uppercase;
+  text-transform: capitalize;
   letter-spacing: .06em;
-  color: var(--dark);
+  color: var(--red);
   text-decoration: none;
   cursor: none;
   transition: color .2s
