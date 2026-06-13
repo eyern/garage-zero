@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Garage Zero | Thika & Embu</title>
+  <link rel="icon" type="image/png" href="favicon.ico">
+  <meta name="description" content="Authorised Evalast & Sinoray Dealer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Barlow+Condensed:wght@400;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css">
+
+
+</head>
+
+<body>
+
+  <!-- CURSOR -->
+  <div id="cur"></div>
+  <div id="cur-r"></div>
+
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="ld-wrap">
+      <img src="img/garage-zero-logo.png" alt="Revolt" />
+      <div class="ld-sep"></div>
+      <div class="ld-info">Garage<small> Zero</small></div>
+    </div>
+    <div class="ld-prog">
+      <div class="ld-bar" id="lbar"></div>
+    </div>
+    <div class="ld-note">Thika town & Embu</div>
+  </div>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <a href="#" class="nb">
+      <img src="img/garage-zero-logo.png" alt="Revolt" />
+      <div class="nb-div"></div>
+      <div class="nb-txt">Garage Zero<small>Thika town & Embu</small></div>
+    </a>
+    <div class="nl">
+      <a href="#bikes">Bikes</a>
+      <a href="#about">About Garage Zero</a>
+      <a href="#enq">Enquiry</a>
+      <a href="tel:+254714314360">📞 0714-314-360</a>
+      <a href="https://evalastmotorcycles.com/" target="_blank" class="nbtn">Shop</a>
+    </div>
+    <div class="ham" id="ham" onclick="toggleMM()"><span></span><span></span><span></span></div>
+  </nav>
+  <div class="mm" id="mm">
+    <a href="#bikes" onclick="toggleMM()">Bikes</a>
+    <a href="#about" onclick="toggleMM()">About</a>
+    <a href="#enq" onclick="toggleMM()">Enquiry</a>
+    <a href="tel:+254714314360" onclick="toggleMM()">📞 0714-314-360</a>
+    <a href="https://www.revoltmotors.com/book" target="_blank" onclick="toggleMM()">Book Now</a>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <img class="hbg" src="img/home.png" alt="Garage Zero" loading="eager" fetchpriority="high"
+      onerror="this.src='https://revoltmotors.s3.ap-south-1.amazonaws.com/assets/images/ev-gallery/rv400_03.png'" />
+    <div class="hov1"></div>
+    <div class="hov2"></div>
+    <div class="hc">
+      <div class="hbadge"><span>Thika & Embu</span></div>
+      <h1 class="hh1">Welcome to<br><em>Garage</em><br>Zero.</h1>
+      <p class="hsub">Official showroom at Thika town next to Bazaar &amp; New Embu branch; next to coca cola depot</p>
+      <div class="hbtns">
+        <a href="https://evalastmotorcycles.com/" target="_blank" class="br">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+          Shop
+        </a>
+        <a href="https://maps.app.goo.gl/FnfTuuFrdgMCddgm6" target="_blank" class="bw">Visit Showroom</a>
+      </div>
+    </div>
+    <div class="hscroll">
+      <div class="sbar"></div><span>Garage Zero👇</span>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="mq">
+    <div class="mq-track">
+      <div class="mq-inner" id="mqi1">
+        <span class="mq-item"><span class="mq-dot"></span>Welcome to Garage Zero</span>
+      </div>
+      <div class="mq-inner" aria-hidden="true">
+        <span class="mq-item"><span class="mq-dot"></span>Embu branch is now open🤗. </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- BIKES -->
+  <section id="bikes">
+    <div class="sl rv">
+      <div class="sl-line"></div><span>Checkout our motorcycles</span>
+    </div>
+    <h2 class="sh rv" style="color:#fff">Our <span>Motorcycles</span></h2>
+
+    <div class="bk-list">
+
+      <!-- RV1 -->
+      <div class="bk rv">
+        <div class="bkimg">
+          <img src="img/evelast-kuga-150.png" alt="Evalast Kuga 150" loading="lazy" />
+        </div>
+        <div class="bkinfo">
+          <div class="bk-tr"><span class="bk-series">Entry Plus</span><span class="bk-bdg r">Popular</span></div>
+          <div class="bk-name">EVALAST-KUGA 150</div>
+          <div class="bk-pr"><span class="bk-pr-from"></span><span class="bk-pr-v">KSh 165,000</span><span
+              class="bk-pr-note">*available in Thika & Embu showrooms</span></div>
+          <div class="bk-sg">
+            <div class="bkspec">
+              <div class="bkspec-v">0 Mileage</div>
+              <div class="bkspec-l">Range</div>
+            </div>
+            <div class="bkspec">
+              <div class="bkspec-v">5 Speed</div>
+              <div class="bkspec-l">Transmission</div>
+            </div>
+            <div class="bkspec">
+              <div class="bkspec-v">40-45+ km/l</div>
+              <div class="bkspec-l">Fuel Economy</div>
+            </div>
+            <div class="bkspec">
+              <div class="bkspec-v">CPF Balanced Engine</div>
+              <div class="bkspec-l">Engine Type</div>
+            </div>
+          </div>
+          <table class="bk-tbl">
+            <tr>
+              <td>Overall Dimensions</td>
+              <td>1950×770×1120mm</td>
+            </tr>
+            <tr>
+              <td>Weight</td>
+              <td>115kg</td>
+            </tr>
+            <tr>
+              <td>Ground Clearance</td>
+              <td>190mm</td>
+            </tr>
+            <tr>
+              <td>Engine Model</td>
+              <td>Single cylinder / Four-stroke / Air cooling</td>
+            </tr>
+            <tr>
+              <td>Fuel Consumption</td>
+              <td>1L/40-45km</td>
+            </tr>
+            <tr>
+              <td>Fuel Tank Capacity</td>
+              <td>12-16L</td>
+            </tr>
+          </table>
+          <div class="bk-acts">
+            <a href="https://evalastmotorcycles.com/product/5ad4a4hbd3/" target="_blank" class="bb">Shop Now →</a>
+            <a href="https://maps.app.goo.gl/FnfTuuFrdgMCddgm6" target="_blank" class="bg">Visit Showroom</a>
+            <a href="tel:+254714314360" target="_blank" class="bg">Call Us</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- RV1+ -->
+      <div class="bk flip rv">
+        <div class="bkimg">
+          <img src="img/SR-180-removebg-preview.png" alt="Revolt RV1+" loading="lazy" />
+        </div>
+        <div class="bkinfo">
+          <div class="bk-tr"><span class="bk-series">Entry Series</span></div>
+          <div class="bk-name">SINORAY SR-180</div>
+          <div class="bk-pr"><span class="bk-pr-from"></span><span class="bk-pr-v">KSh 175,000</span><span
+              class="bk-pr-note">*available in Thika & Embu showrooms</span></div>
+          <div class="bk-sg">
+            <div class="bkspec">
+              <div class="bkspec-v">0 Mileage</div>
+              <div class="bkspec-l">Range</div>
+            </div>
+            <div class="bkspec">
+              <div class="bkspec-v">6 Speed</div>
+              <div class="bkspec-l">Transmission</div>
+            </div>
+            <div class="bkspec">
+              <div class="bkspec-v">40km/l</div>
+              <div class="bkspec-l">Fuel Economy</div>
+            </div>
+            <div class="bkspec">
+              <div class="bkspec-v">CPF Balanced</div>
+              <div class="bkspec-l">Engine Type</div>
+            </div>
+          </div>
+          <table class="bk-tbl">
+            <tr>
+              <td>Overall Dimensions</td>
+              <td>1950×770×1120mm</td>
+            </tr>
+            <tr>
+              <td>Weight</td>
+              <td>115kg</td>
+            </tr>
+            <tr>
+              <td>Ground Clearance</td>
+              <td>190mm</td>
+            </tr>
+            <tr>
+              <td>Engine Model</td>
+              <td>Single cylinder / Four-stroke / Air cooling</td>
+            </tr>
+            <tr>
+              <td>Fuel Consumption</td>
+              <td>1L/40km</td>
+            </tr>
+            <tr>
+              <td>Fuel Tank Capacity</td>
+              <td>15L</td>
+            </tr>
+          </table>
+          <div class="bk-acts">
+            <a href="https://evalastmotorcycles.com/product/3b1254bbh4/" target="_blank" class="bb">Shop Now →</a>
+            <a href="https://maps.app.goo.gl/FnfTuuFrdgMCddgm6" target="_blank" class="bg">Visit Showroom</a>
+            <a href="tel:+254714314360" target="_blank" class="bg">Call Us</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- RV BlazeX -->
+      <div class="bk rv">
+        <div class="bkimg">
+          <img src="img/evakuga-200.png" alt="Revolt RV BlazeX" loading="lazy" />
+        </div>
+        <div class="bkinfo">
+          <div class="bk-tr"><span class="bk-series">Sports Series</span><span class="bk-bdg o">New</span></div>
+          <div class="bk-name">EVAKUGA-200</div>
+          <div class="bk-pr"><span class="bk-pr-from"></span><span class="bk-pr-v">KSh 210,000</span><span
+              class="bk-pr-note">*available in Thika & Embu showrooms</span></div>
+          <div class="bk-sg">
+            <div class="bkspec">
+              <div class="bkspec-v">0 Mileage</div>
+              <div class="bkspec-l">Range</div>
+            </div>
+            <div class="bkspec">
+              <div class="bkspec-v">6 Speed</div>
+              <div class="bkspec-l">Transmission</div>
+            </div>
+            <div class="bkspec">
+              <div class="bkspec-v">40km/l</div>
+              <div class="bkspec-l">Fuel Economy</div>
+            </div>
+            <div class="bkspec">
+              <div class="bkspec-v">CPF Balanced</div>
+              <div class="bkspec-l">Engine Type</div>
+            </div>
+          </div>
+          <table class="bk-tbl">
+            <tr>
+              <td>Engine Model</td>
+              <td>200cc, Air-cooled, CPF Balanced Engine</td>
+            </tr>
+            <tr>
+              <td>Starting Mechanisms</td>
+              <td>Electric and kick-start</td>
+            </tr>
+            <tr>
+              <td>Brakes</td>
+              <td>Front & Rear Disc Brakes</td>
+            </tr>
+
+            <tr>
+              <td>Fuel Consumption</td>
+              <td>1L/40km</td>
+            </tr>
+            <tr>
+              <td>Fuel Tank Capacity</td>
+              <td>16L</td>
+            </tr>
+          </table>
+          <div class="bk-acts">
+            <a href="https://evalastmotorcycles.com/product/5d23gae4g4/" target="_blank" class="bb">Shop Now →</a>
+            <a href="https://maps.app.goo.gl/FnfTuuFrdgMCddgm6" target="_blank" class="bg">Visit Showroom</a>
+            <a href="tel:+254714314360" target="_blank" class="bg">Call Us</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- RV400 BRZ -->
+      <!-- <div class="bk flip rv">
+      <div class="bkimg">
+        <img src="https://www.revoltmotors.com/_next/image?url=%2Fimages%2FHomePageBike%2FRVBRZ_D.webp&w=1920&q=75" alt="Revolt RV400 BRZ" loading="lazy"/>
+      </div>
+      <div class="bkinfo">
+        <div class="bk-tr"><span class="bk-series">Performance</span><span class="bk-bdg p">BRZ Edition</span></div>
+        <div class="bk-name">RV400 BRZ</div>
+        <div class="bk-pr"><span class="bk-pr-from">From</span><span class="bk-pr-v">₹1,29,950</span><span class="bk-pr-note">*ex-showroom</span></div>
+        <div class="bk-sg">
+          <div class="bkspec"><div class="bkspec-v">150km</div><div class="bkspec-l">Range</div></div>
+          <div class="bkspec"><div class="bkspec-v">85km/h</div><div class="bkspec-l">Top Speed</div></div>
+          <div class="bkspec"><div class="bkspec-v">128Nm</div><div class="bkspec-l">Torque</div></div>
+          <div class="bkspec"><div class="bkspec-v">4.5kW</div><div class="bkspec-l">Motor</div></div>
+        </div>
+        <table class="bk-tbl">
+          <tr><td>Segment</td><td>Performance</td></tr>
+          <tr><td>Special Edition</td><td>BRZ Livery</td></tr>
+          <tr><td>Payload Capacity</td><td>190 kg</td></tr>
+          <tr><td>Ride Modes</td><td>Eco / Normal / Sport</td></tr>
+          <tr><td>App Connectivity</td><td>MyRevolt App</td></tr>
+          <tr><td>GPS Tracking</td><td>Yes</td></tr>
+        </table>
+        <div class="bk-acts">
+          <a href="https://www.revoltmotors.com/book?model=RV400%20BRZ" target="_blank" class="bb">Book Now →</a>
+          <a href="https://www.revoltmotors.com/rv400-brz" target="_blank" class="bg">Explore</a>
+          <a href="https://www.revoltmotors.com/test-ride?model=RV400%20BRZ" target="_blank" class="bg">Test Ride</a>
+        </div>
+      </div>
+    </div> -->
+
+      <!-- RV400 FLAGSHIP -->
+      <!-- <div class="bk rv">
+      <div class="bkimg">
+        <img src="https://www.revoltmotors.com/_next/image?url=%2Fimages%2FHomePageBike%2FRV400_D.webp&w=1920&q=75" alt="Revolt RV400 Flagship" loading="lazy"/>
+      </div>
+      <div class="bkinfo">
+        <div class="bk-tr"><span class="bk-series">Flagship</span><span class="bk-bdg r">Best Seller</span></div>
+        <div class="bk-name">RV400</div>
+        <div class="bk-pr"><span class="bk-pr-from">From</span><span class="bk-pr-v">₹1,39,950</span><span class="bk-pr-note">*ex-showroom</span></div>
+        <div class="bk-sg">
+          <div class="bkspec"><div class="bkspec-v">150km</div><div class="bkspec-l">Range</div></div>
+          <div class="bkspec"><div class="bkspec-v">85km/h</div><div class="bkspec-l">Top Speed</div></div>
+          <div class="bkspec"><div class="bkspec-v">128Nm</div><div class="bkspec-l">Torque</div></div>
+          <div class="bkspec"><div class="bkspec-v">4 Sounds</div><div class="bkspec-l">AI Audio</div></div>
+        </div>
+        <table class="bk-tbl">
+          <tr><td>Ride Modes</td><td>Eco / Normal / Sport</td></tr>
+          <tr><td>Sound Modes</td><td>Revolt / Rebel / Roar / Rage</td></tr>
+          <tr><td>Fast Charge (0–80%)</td><td>80 min</td></tr>
+          <tr><td>App Connectivity</td><td>MyRevolt App</td></tr>
+          <tr><td>GPS Tracking</td><td>Yes</td></tr>
+          <tr><td>Reverse Mode</td><td>Yes</td></tr>
+        </table>
+        <div class="bk-acts">
+          <a href="https://www.revoltmotors.com/book?model=RV400" target="_blank" class="bb">Book Now →</a>
+          <a href="https://www.revoltmotors.com/rv400" target="_blank" class="bg">Explore</a>
+          <a href="https://www.revoltmotors.com/test-ride?model=RV400" target="_blank" class="bg">Test Ride</a>
+        </div>
+      </div>
+    </div>
+
+  </div> -->
+  </section>
+
+  <!-- CITIES MARQUEE -->
+  <div class="cmq">
+    <div class="cmq-lbl">Our Showrooms Branches</div>
+    <div class="cmq-track">
+      <div class="cmq-inner" id="cmqi">
+        <span class="ci"><span class="ci-dot"></span><span class="ci-name">Main Branch - Thika Town</span><span
+            class="ci-dist">HQ</span></span>
+      </div>
+      <div class="cmq-inner" aria-hidden="true">
+        <span class="ci"><span class="ci-dot"></span><span class="ci-name">Embu Shop</span><span class="ci-dist">New
+            Branch</span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="abt-grid">
+      <div class="rv-l">
+        <div style="position:relative;display:inline-block;width:100%">
+          <img class="abt-img" src="img/garage-zero-.png" alt="Garage Zero Logo" loading="lazy" />
+          <div class="abt-overlay">
+            <div class="ao-n">Since<br>2015</div>
+            <div class="ao-t">Authorised Dealer</div>
+          </div>
+        </div>
+        <div class="abt-stats">
+          <div class="as">
+            <div class="as-n">11+</div>
+            <div class="as-l">Years in industry</div>
+          </div>
+          <div class="as">
+            <div class="as-n">2</div>
+            <div class="as-l">Our Branches</div>
+          </div>
+          <div class="as">
+            <div class="as-n">100+</div>
+            <div class="as-l">Our Partners</div>
+          </div>
+        </div>
+      </div>
+      <div class="rv-r">
+        <div class="sl">
+          <div class="sl-line"></div><span>Our Story</span>
+        </div>
+        <h2 class="sh">About <span>Garage Zero</span><br></h2>
+        <div class="abt-text">
+          <p>Welcome to Garage Zero, a trusted name in mobility solutions with nearly 11 years of expertise.
+            Headquartered in Thika, Garage Zero specializes in delivering high-quality
+            motorcycles, spare parts, and exceptional after-sales services.</p>
+          <p>From your first test ride to registration, delivery, and after-sales service our trained team
+            is here to make your journey smooth and rewarding.
+            <br>
+            Join us on our mission to drive progress, deliver opportunity, and redefine mobility. Garage Zero: Your
+            Trusted
+            Partner on Every Journey.
+          </p>
+        </div>
+        <div class="abt-addr">
+          <div class="aa-lbl">Our Showrooms</div>
+          <div class="aa-txt">
+            📍 Thika town, Next to Bazaar Plaza
+            📞 <a href="tel:+254714314360">0714-314-360</a> &nbsp;·&nbsp;
+            <br>
+
+            📍 Embu town next to coca cola depot
+            📞 <a href="tel:+254740605481">0740-605-481</a> &nbsp;·&nbsp;
+            <br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY EV -->
+  <section id="why" style="background:var(--bg3)">
+    <div class="sl rv">
+      <div class="sl-line"></div><span>Our Services</span>
+    </div>
+    <h2 class="sh rv">What <span>we do</span> @Garage Zero</h2>
+    <div class="why-g">
+      <div class="wc rv">
+        <div class="wi">⚙️</div>
+        <div class="wt">Mechanical Repairs & Diagnostics</div>
+        <div class="wd">-Engine Rebuilds & Tuning: Diagnosing engine issues, performing top-end or full engine rebuilds,
+          and carburetors/fuel injection tuning.
+          <br>
+          -Suspension Servicing: Replacing fork seals, changing fork oil, and
+          adjusting or rebuilding front and rear shocks.
+          <br>
+          -Transmission/Clutch Repair: Fixing shifting issues, replacing
+          clutch plates, and adjusting clutch cables or hydraulics.
+        </div>
+      </div>
+      <div class="wc rv">
+        <div class="wi">🛠️</div>
+        <div class="wt">Routine Maintenance</div>
+        <div class="wd">-Oil & Filter Change: Replacing old engine oil and the oil filter to keep internal engine
+          components lubricated and clean.
+          <br>
+          -Chain Service: Cleaning, lubricating, and adjusting the drive chain tension for optimal power transfer.
+          <br>
+          -Brake Inspection & Flush: Checking brake pads and rotors for wear, and replacing or bleeding brake fluid.
+        </div>
+      </div>
+      <div class="wc rv">
+        <div class="wi">⚡</div>
+        <div class="wt">Electrical Services</div>
+        <div class="wd">-Battery Replacement & Testing: Diagnosing electrical draws and replacing dead or failing
+          batteries.
+          <br>
+          -Lighting & Controls: Repairing headlights, taillights, turn signals, and handlebar controls.
+          <br>
+          -Wiring &
+          Stator/Regulator Fixes: Diagnosing charging issues and repairing or replacing faulty wires, stators, and
+          rectifier-regulators
+        </div>
+      </div>
+      <div class="wc rv">
+        <div class="wi">🔧</div>
+        <div class="wt">Specialized Services</div>
+        <div class="wd">-Customization & Modifications: Installing custom exhausts, seats, handlebars, or
+          lighting.
+          <br>
+          -Pre-Purchase Inspections: Assessing a used motorcycle's condition and mechanical health before you
+          buy.
+          <br>
+          -Accident Repair & Restorations: Rebuilding wrecked bikes and restoring classic or vintage motorcycle
+        </div>
+      </div>
+      <div class="wc rv">
+        <div class="wi">🛞</div>
+        <div class="wt">Tires & Wheels</div>
+        <div class="wd">-Tire Replacement: Mounting and balancing new tires.
+          <br>
+          -Wheel Balancing & Truing: Ensuring wheels are
+          perfectly balanced and aligned to prevent vibrations and uneven tire wear.
+          <br>
+          -Tire Pressure Monitoring: Inspecting
+          tire pressure and valve health.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENQUIRY FORM -->
+  <section id="enq" style="background:var(--dark2);padding:5.5rem 5%">
+    <div class="enq-g">
+      <div class="rv-l">
+        <h2
+          style="font-family:'Barlow Condensed',sans-serif;font-size:clamp(2rem,4vw,3.6rem);font-weight:800;text-transform:uppercase;line-height:.93;color:#fff;margin-bottom:1.2rem">
+          Get In <span style="color:var(--red)">Touch</span><br>With Us</h2>
+        <p style="font-size:.9rem;color:rgba(255,255,255,.5);line-height:1.8">Fill the form and
+          our team at Garage Zero will get back to you as soon as possible.</p>
+        <div class="ectl">
+          <a href="tel:+254714314360" class="ec">
+            <div class="ec-ico cl">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#1A8A4A" stroke-width="2">
+                <path
+                  d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.43 10.34 19.79 19.79 0 01.36 1.75 2 2 0 012.34 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 8.1a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
+              </svg>
+            </div>
+            <div>
+              <div class="ec-lbl">Call Us</div>
+              <div class="ec-v">0714-314-360 - Main Branch</div>
+              <br>
+              <div class="ec-v">0740-605-481 - Embu Branch</div>
+            </div>
+          </a>
+          <a href="https://wa.me/910714-314-360?text=Hi!%20I%20am%20interested%20in%20Revolt%20bikes%20at%20AK%20Enterprises%20Chhibramau."
+            target="_blank" class="ec">
+            <div class="ec-ico wa">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="#25D366">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+                <path
+                  d="M11.999 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.868-1.426A9.945 9.945 0 0012 22c5.523 0 10-4.477 10-10S17.522 2 11.999 2zm0 18a7.95 7.95 0 01-4.071-1.118l-.291-.173-3.018.883.849-3.1-.19-.309A7.977 7.977 0 014 12c0-4.411 3.589-8 8-8s8 3.589 8 8-3.589 8-8 8z" />
+              </svg>
+            </div>
+            <div>
+              <div class="ec-lbl">WhatsApp Us</div>
+              <div class="ec-v">0714-314-360</div>
+            </div>
+          </a>
+          <a href="https://www.instagram.com/evalast_motorcycles/" target="_blank" class="ec">
+            <div class="ec-ico ig">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#E1306C" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" />
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg>
+            </div>
+            <div>
+              <div class="ec-lbl">Instagram</div>
+              <div class="ec-v">@_garage.zero_
+                z</div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="rv-r">
+        <div class="enq-form-box">
+          <div class="ef-title">Send an Enquiry</div>
+          <div class="ef-sub">We'll get back to you as soon as possible!</div>
+          <div id="ffields">
+            <div class="frow">
+              <div class="fg"><label class="flbl">Full Name *</label><input type="text" class="fi" id="fn"
+                  placeholder="Your full name" /></div>
+              <div class="fg"><label class="flbl">Mobile Number *</label><input type="tel" class="fi" id="fp"
+                  placeholder="+254 XXX XXX XXX" /></div>
+            </div>
+            <div class="frow">
+              <div class="fg">
+                <label class="flbl">Our Branches</label>
+                <select class="fi" id="fc">
+                  <option value="">Select showroom</option>
+                  <option>Thika(Main Branch)</option>
+                  <option>Embu Town</option>
+                </select>
+              </div>
+              <div class="fg">
+                <label class="flbl">Bike of Interest</label>
+                <select class="fi" id="fm">
+                  <option value="">Select model</option>
+                  <option>EVAKUGA-200</option>
+                  <option>EVALAST-KUGA-150</option>
+                  <option>SINORAY SR-180</option>
+                  <option>EVALAST FLASH 150X</option>
+                </select>
+              </div>
+            </div>
+            <div class="fg">
+              <label class="flbl">Enquiry Type</label>
+              <select class="fi" id="ft">
+                <option value="">Select type</option>
+                <option>Book a Bike</option>
+                <option>Price &amp; Details</option>
+                <option>Exchange / Trade-In</option>
+                <option>After-Sales / Service</option>
+                <option>General Enquiry</option>
+              </select>
+            </div>
+            <div class="fg">
+              <label class="flbl">Your Message (Optional)</label>
+              <textarea class="fi" id="fmsg" placeholder="Tell us how we can help…"></textarea>
+            </div>
+            <button class="fsub" onclick="doSubmit()">Send Enquiry →</button>
+          </div>
+          <div class="fsuc" id="fsuc">
+            <strong>✅ Enquiry Received!</strong>
+            Thank you <span id="fsucname"></span>! Our team will call you at <span id="fsucph"></span> within 24
+            hours.<br><br>
+            <small style="color:rgba(255,255,255,.3)">A WhatsApp message is being opened for instant
+              confirmation.</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOCIAL STRIP -->
+  <div class="ss">
+    <a href="tel:+254714314360" class="ssi">
+      <div class="ssi-ic"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+          <path
+            d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.43 10.34 19.79 19.79 0 01.36 1.75 2 2 0 012.34 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 8.1a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
+        </svg></div>
+      <div class="ssi-txt"><strong>Call Now</strong><span>0714-314-360</span></div>
+    </a>
+    <a href="https://wa.me/254714314360?text=Hi!%20I%20I'm%20from%20Garage%20more%20about%20Zero%20Website%20"
+      target="_blank" class="ssi">
+      <div class="ssi-ic"><svg width="19" height="19" viewBox="0 0 24 24" fill="#fff">
+          <path
+            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+          <path
+            d="M11.999 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.868-1.426A9.945 9.945 0 0012 22c5.523 0 10-4.477 10-10S17.522 2 11.999 2zm0 18a7.95 7.95 0 01-4.071-1.118l-.291-.173-3.018.883.849-3.1-.19-.309A7.977 7.977 0 014 12c0-4.411 3.589-8 8-8s8 3.589 8 8-3.589 8-8 8z" />
+        </svg></div>
+      <div class="ssi-txt"><strong>WhatsApp</strong><span>Chat with us</span></div>
+    </a>
+    <a href="https://www.instagram.com/evalast_motorcycles/" target="_blank" class="ssi">
+      <div class="ssi-ic"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+          <rect x="2" y="2" width="20" height="20" rx="5" />
+          <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+        </svg></div>
+      <div class="ssi-txt"><strong>Instagram</strong><span>@garage_zero
+        </span></div>
+    </a>
+    <a href="https://evalastmotorcycles.com/" target="_blank" class="ssi">
+      <div class="ssi-ic"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+          <path
+            d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+        </svg></div>
+      <div class="ssi-txt"><strong>Online Shopping</strong><span>evalastmotorcycles.com</span></div>
+    </a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="ft">
+      <div class="fb-l">
+        <div class="fb-brand">
+          <img src="img/garage-zero-logo.png" alt="Revolt" />
+          <div class="fb-brand-txt">Garage Zero<small>Thika & Embu</small></div>
+        </div>
+        <p>Official showroom at Thika town next to Bazaar &amp; New Embu branch; next to coca cola depot</p>
+      </div>
+      <div class="fc">
+        <h4>Our Bikes</h4>
+        <a href="https://evalastmotorcycles.com/product/5d23gae4g4/" target="_blank">EVAKUGA-200</a>
+        <a href="https://evalastmotorcycles.com/product/5ad4a4hbd3/" target="_blank">EVALAST-KUGA-150</a>
+        <a href="https://evalastmotorcycles.com/product/3b1254bbh4/" target="_blank">SINORAY SR-180</a>
+        <a href="https://evalastmotorcycles.com/product/32d3afgbf1/" target="_blank">EVALAST FLASH 150X</a>
+      </div>
+      <div class="fc">
+        <h4>Quick Links</h4>
+        <a href="#bout">About Garage Zero</a>
+        <a href="https://evalastmotorcycles.com/category/cat4deea44313/" target="_blank">Spares</a>
+        <a href="https://evalastmotorcycles.com/" target="_blank">Shop</a>
+        <a href="https://maps.app.goo.gl/FnfTuuFrdgMCddgm6">Our Location</a>
+      </div>
+      <div class="fc">
+        <h4>Get in touch</h4>
+        <a href="tel:+254714314360">📞 0714-314-360 - Main Branch</a>
+        <a href="tel:+254714314360">📞 0740-605-481 - Embu Branch</a>
+      </div>
+    </div>
+    <div class="fb-bot">
+      <p>©2026 Garage Zero. All rights reserved</p>
+      <p>Designed by <a href="tel:+254722424220" target="_blank">Eyern</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- FLOATING ACTIONS -->
+  <div class="fl-a">
+    <a href="tel:+254714314360" class="flb cl" title="Call +91 0714-314-360">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+        <path
+          d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.43 10.34 19.79 19.79 0 01.36 1.75 2 2 0 012.34 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 8.1a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
+      </svg>
+    </a>
+    <a href="https://wa.me/254714314360?text=Hi!%20I'm%20from%20Garage%20Zero%20website%20😊%20." target="_blank"
+      class="flb wa" title="WhatsApp +91 0714-314-360">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="#fff">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+        <path
+          d="M11.999 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.868-1.426A9.945 9.945 0 0012 22c5.523 0 10-4.477 10-10S17.522 2 11.999 2zm0 18a7.95 7.95 0 01-4.071-1.118l-.291-.173-3.018.883.849-3.1-.19-.309A7.977 7.977 0 014 12c0-4.411 3.589-8 8-8s8 3.589 8 8-3.589 8-8 8z" />
+      </svg>
+    </a>
+  </div>
+
+  <script>
+    // LOADER — fast, no lag
+    (function () {
+      var bar = document.getElementById('lbar'), loader = document.getElementById('loader'), p = 0;
+      var t = setInterval(function () { p = Math.min(p + Math.random() * 20, 100); bar.style.width = p + '%'; if (p >= 100) clearInterval(t); }, 55);
+      function hide() { loader.style.transition = 'opacity .45s'; loader.style.opacity = '0'; setTimeout(function () { loader.style.display = 'none'; }, 450); }
+      if (document.readyState === 'complete') { setTimeout(hide, 700); }
+      else { window.addEventListener('load', function () { setTimeout(hide, 700); }); }
+    })();
+
+    // CURSOR — direct no lag
+    var cur = document.getElementById('cur'), curR = document.getElementById('cur-r');
+    var mx = 0, my = 0, rx = 0, ry = 0;
+    document.addEventListener('mousemove', function (e) {
+      mx = e.clientX; my = e.clientY;
+      cur.style.left = mx + 'px'; cur.style.top = my + 'px';
+    });
+    (function animR() { rx += (mx - rx) * .13; ry += (my - ry) * .13; curR.style.left = rx + 'px'; curR.style.top = ry + 'px'; requestAnimationFrame(animR); })();
+    document.querySelectorAll('a,button,select,input,textarea').forEach(function (el) {
+      el.addEventListener('mouseenter', function () { document.body.classList.add('hov'); });
+      el.addEventListener('mouseleave', function () { document.body.classList.remove('hov'); });
+    });
+
+    // NAV
+    var nav = document.getElementById('nav');
+    window.addEventListener('scroll', function () { nav.classList.toggle('s', window.scrollY > 50); }, { passive: true });
+
+    // MOBILE MENU
+    function toggleMM() {
+      document.getElementById('mm').classList.toggle('o');
+      document.getElementById('ham').classList.toggle('o');
+    }
+
+    // REVEAL
+    var rvEls = document.querySelectorAll('.rv,.rv-l,.rv-r');
+    var obs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e, i) {
+        if (e.isIntersecting) { setTimeout(function () { e.target.classList.add('in'); }, i * 55); obs.unobserve(e.target); }
+      });
+    }, { threshold: 0.1 });
+    rvEls.forEach(function (el) { obs.observe(el); });
+
+    // FORM
+    function doSubmit() {
+      var name = document.getElementById('fn').value.trim();
+      var phone = document.getElementById('fp').value.trim();
+      if (!name) { alert('Please enter your name.'); return; }
+      if (!phone) { alert('Please enter your mobile number.'); return; }
+      var model = document.getElementById('fm').value || 'Not selected';
+      var city = document.getElementById('fc').value || 'Not specified';
+      var type = document.getElementById('ft').value || 'General';
+      var msg = document.getElementById('fmsg').value || '';
+      document.getElementById('ffields').style.display = 'none';
+      document.getElementById('fsucname').textContent = name;
+      document.getElementById('fsucph').textContent = phone;
+      document.getElementById('fsuc').style.display = 'block';
+      var wa = 'Hi! New enquiry from Garage Zero website\n\nName: ' + name + '\nPhone: ' + phone + '\nCity: ' + city + '\nModel: ' + model + '\nType: ' + type + (msg ? '\nMessage: ' + msg : '');
+      setTimeout(function () { window.open('https://wa.me/254714314360?text=' + encodeURIComponent(wa), '_blank'); }, 900);
+    }
+
+    // SMOOTH SCROLL
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        var t = document.querySelector(a.getAttribute('href'));
+        if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+      });
+    });
+  </script>
+</body>
+
+</html>
