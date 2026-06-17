@@ -45,6 +45,7 @@
     <div class="nl">
       <a href="#bikes">Bikes</a>
       <a href="#about">About Garage Zero</a>
+      <a href="#services">Our Services</a>
       <a href="#enq">Enquiry</a>
       <a href="tel:+254714314360">📞 0714-314-360</a>
       <a href="https://evalastmotorcycles.com/" target="_blank" class="nbtn">Shop</a>
@@ -54,6 +55,7 @@
   <div class="mm" id="mm">
     <a href="#bikes" onclick="toggleMM()">Bikes</a>
     <a href="#about" onclick="toggleMM()">About Garage Zero</a>
+    <a href="#services" onclick="toggleMM()">Our Services</a>
     <a href="#enq" onclick="toggleMM()">Enquiry</a>
     <a href="tel:+254714314360" onclick="toggleMM()">📞 0714-314-360</a>
     <a href="https://evalastmotorcycles.com/" target="_blank" onclick="toggleMM()">Shop</a>
@@ -61,7 +63,7 @@
 
   <!-- HERO -->
   <section id="hero">
-    <img class="hbg" src="img/home.jpg" alt="Garage Zero" loading="eager" fetchpriority="high"/>
+    <img class="hbg" src="img/home.jpg" alt="Garage Zero" loading="eager" fetchpriority="high" />
     <div class="hov1"></div>
     <div class="hov2"></div>
     <div class="hc">
@@ -81,7 +83,7 @@
     <div class="hscroll">
       <div class="sbar"></div><span>Garage Zero👇</span>
     </div>
-  </section>
+  </section>o
 
   <!-- MARQUEE -->
   <div class="mq">
@@ -427,76 +429,113 @@
     </div>
   </section>
 
-  <!-- WHY EV -->
-  <section id="why" style="background:var(--bg3)">
-    <div class="sl rv">
-      <div class="sl-line"></div><span>Our Services</span>
-    </div>
-    <h2 class="sh rv">What <span>we do</span> @Garage Zero</h2>
-    <div class="why-g">
-      <div class="wc rv">
-        <div class="wi">⚙️</div>
-        <div class="wt">Mechanical Repairs & Diagnostics</div>
-        <div class="wd">-Engine Rebuilds & Tuning: Diagnosing engine issues, performing top-end or full engine rebuilds,
-          and carburetors/fuel injection tuning.
-          <br>
-          -Suspension Servicing: Replacing fork seals, changing fork oil, and
-          adjusting or rebuilding front and rear shocks.
-          <br>
-          -Transmission/Clutch Repair: Fixing shifting issues, replacing
-          clutch plates, and adjusting clutch cables or hydraulics.
-        </div>
+  <section class="services-section" id="services">
+    <div class="services-container">
+
+      <!-- Section Header -->
+      <div class="sl rv">
+        <div class="sl-line"></div><span>Our Services</span>
       </div>
-      <div class="wc rv">
-        <div class="wi">🛠️</div>
-        <div class="wt">Routine Maintenance</div>
-        <div class="wd">-Oil & Filter Change: Replacing old engine oil and the oil filter to keep internal engine
-          components lubricated and clean.
-          <br>
-          -Chain Service: Cleaning, lubricating, and adjusting the drive chain tension for optimal power transfer.
-          <br>
-          -Brake Inspection & Flush: Checking brake pads and rotors for wear, and replacing or bleeding brake fluid.
+      <h2 class="sh rv">What <span>we do</span> @Garage Zero</h2>
+      <br><br>
+
+      <!-- Services Grid Box -->
+      <div class="services-grid">
+
+        <!-- Service Card 2 -->
+        <div class="service-card">
+          <div class="service-image-box">
+            <img src="img/services/routine.jpg" alt="Data Analytics & Strategy">
+          </div>
+          <div class="service-content">
+            <h3>Routine Maintenance</h3>
+            <p>-Oil & Filter Change: Replacing old engine oil and the oil filter to keep internal engine components
+              lubricated and clean.
+              -Chain Service: Cleaning, lubricating, and adjusting the drive chain tension for optimal power transfer.
+              -Brake Inspection & Flush: Checking brake pads and rotors for wear, and replacing or bleeding brake fluid.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="wc rv">
-        <div class="wi">⚡</div>
-        <div class="wt">Electrical Services</div>
-        <div class="wd">-Battery Replacement & Testing: Diagnosing electrical draws and replacing dead or failing
-          batteries.
-          <br>
-          -Lighting & Controls: Repairing headlights, taillights, turn signals, and handlebar controls.
-          <br>
-          -Wiring &
-          Stator/Regulator Fixes: Diagnosing charging issues and repairing or replacing faulty wires, stators, and
-          rectifier-regulators
+
+        <!-- Service Card 1 -->
+        <div class="service-card">
+          <div class="service-image-box">
+            <img src="img/gallery/18.jpg" alt="Garage Zero">
+          </div>
+          <div class="service-content">
+            <h3>Engine Replacement</h3>
+            <p>Full engine overhauls, crankshaft replacement, piston and ring changes, valves grinding, and
+              clutch/gearbox bearing replacements.For high-mileage or poorly maintained bikes, a full engine overhaul
+              restores performance.</p>
+          </div>
         </div>
-      </div>
-      <div class="wc rv">
-        <div class="wi">🔧</div>
-        <div class="wt">Specialized Services</div>
-        <div class="wd">-Customization & Modifications: Installing custom exhausts, seats, handlebars, or
-          lighting.
-          <br>
-          -Pre-Purchase Inspections: Assessing a used motorcycle's condition and mechanical health before you
-          buy.
-          <br>
-          -Accident Repair & Restorations: Rebuilding wrecked bikes and restoring classic or vintage motorcycle
+
+
+        <!-- Service Card 3 -->
+        <div class="service-card">
+          <div class="service-image-box">
+            <img src="img/services/electricals.jpg" alt="Garage Zero">
+          </div>
+          <div class="service-content">
+            <h3>Electrical System Check</h3>
+            <p>-Battery Replacement & Testing: Diagnosing electrical draws and replacing dead or failing batteries.
+              -Lighting & Controls: Repairing headlights, taillights, turn signals, and handlebar controls.
+              -Wiring & Stator/Regulator Fixes: Diagnosing charging issues and repairing or replacing faulty wires,
+              stators, and rectifier-regulators </p>
+          </div>
         </div>
-      </div>
-      <div class="wc rv">
-        <div class="wi">🛞</div>
-        <div class="wt">Tires & Wheels</div>
-        <div class="wd">-Tire Replacement: Mounting and balancing new tires.
-          <br>
-          -Wheel Balancing & Truing: Ensuring wheels are
-          perfectly balanced and aligned to prevent vibrations and uneven tire wear.
-          <br>
-          -Tire Pressure Monitoring: Inspecting
-          tire pressure and valve health.
+
+        <!-- Service Card 3 -->
+        <div class="service-card">
+          <div class="service-image-box">
+            <img src="img/services/spec.jpg" alt="Garage Zero">
+          </div>
+          <div class="service-content">
+            <h3>Specialized Services</h3>
+            <p>
+              -Customization & Modifications: Installing custom exhausts, seats, handlebars, or lighting.
+              -Pre-Purchase Inspections: Assessing a used motorcycle's condition and mechanical health before you buy.
+              -Accident Repair & Restorations: Rebuilding wrecked bikes and restoring</p>
+          </div>
         </div>
+
+        <!-- Service Card 3 -->
+        <div class="service-card">
+          <div class="service-image-box">
+            <img src="img/services/tires.jpg" alt="Garage Zero">
+          </div>
+          <div class="service-content">
+            <h3>Tires & Wheels</h3>
+            <p>-Tire Replacement: Mounting and balancing new tires.
+              -Wheel Balancing & Truing: Ensuring wheels are perfectly balanced and aligned to prevent vibrations and
+              uneven tire wear.
+              -Tire Pressure Monitoring: Inspecting tire pressure and valve health.</p>
+          </div>
+        </div>
+
+        <!-- Service Card 3 -->
+        <div class="service-card">
+          <div class="service-image-box">
+            <img src="img/services/mechanical.jpg" alt="Web Design & Development">
+          </div>
+          <div class="service-content">
+            <h3>Mechanical Repairs & Diagnostics</h3>
+            <p>-Engine Rebuilds & Tuning: Diagnosing engine issues, performing top-end or full engine rebuilds, and
+              carburetors/fuel injection tuning.
+              -Suspension Servicing: Replacing fork seals, changing fork oil, and adjusting or rebuilding front and rear
+              shocks.
+              -Transmission/Clutch Repair: Fixing shifting issues, replacing clutch plates, and adjusting clutch cables
+              or hydraulics.
+            </p>
+          </div>
+        </div>
+
+
+
       </div>
     </div>
   </section>
+
 
   <!-- ENQUIRY FORM -->
   <section id="enq" style="background:var(--dark2);padding:5.5rem 5%">
@@ -611,6 +650,89 @@
         </div>
       </div>
     </div>
+  </section>
+
+  <section class="gallery-section">
+    <div class="gallery-grid">
+      <!-- Gallery Item 1 -->
+      <div class="gallery-item">
+        <img src="img/gallery/1.jpg" alt="Beautiful landscape" class="gallery-img">
+      </div>
+
+      <!-- Gallery Item 2 -->
+      <div class="gallery-item">
+        <img src="img/gallery/2.jpg" alt="City architecture" class="gallery-img">
+      </div>
+
+      <!-- Gallery Item 3 -->
+      <div class="gallery-item">
+        <img src="img/gallery/3.jpg" alt="Ocean waves" class="gallery-img">
+      </div>
+
+      <!-- Gallery Item 4 -->
+      <div class="gallery-item">
+        <img src="img/gallery/4.jpg" alt="Forest trail" class="gallery-img">
+      </div>
+
+      <!-- Gallery Item 5 -->
+      <div class="gallery-item">
+        <img src="img/gallery/5.jpg" alt="Mountain peak" class="gallery-img">
+      </div>
+
+      <!-- Gallery Item 6 -->
+      <div class="gallery-item">
+        <img src="img/gallery/6.jpg" alt="Garage Zero" class="gallery-img">
+      </div>
+
+      <div class="gallery-item">
+        <img src="img/gallery/7.jpg" alt="Garage Zero" class="gallery-img">
+      </div>
+
+      <div class="gallery-item">
+        <img src="img/gallery/8.jpg" alt="Garage Zero" class="gallery-img">
+      </div>
+
+      <div class="gallery-item">
+        <img src="img/gallery/9.jpg" alt="Garage Zero" class="gallery-img">
+      </div>
+
+      <div class="gallery-item">
+        <img src="img/gallery/10.jpg" alt="Garage Zero" class="gallery-img">
+      </div>
+
+      <div class="gallery-item">
+        <img src="img/gallery/11.jpg" alt="Garage Zero" class="gallery-img">
+      </div>
+
+      <div class="gallery-item">
+        <img src="img/gallery/12.jpg" alt="Garage Zero" class="gallery-img">
+      </div>
+
+      <div class="gallery-item">
+        <img src="img/gallery/13.jpg" alt="Garage Zero" class="gallery-img">
+      </div>
+
+      <div class="gallery-item">
+        <img src="img/gallery/14.jpg" alt="Garage Zero" class="gallery-img">
+      </div>
+
+      <div class="gallery-item">
+        <img src="img/gallery/15.jpg" alt="Garage Zero" class="gallery-img">
+      </div>
+
+      <div class="gallery-item">
+        <img src="img/gallery/16.jpg" alt="Garage Zero" class="gallery-img">
+      </div>
+
+      <div class="gallery-item">
+        <img src="img/gallery/17.jpg" alt="Garage Zero" class="gallery-img">
+      </div>
+
+      <div class="gallery-item">
+        <img src="img/gallery/18.jpg" alt="Garage Zero" class="gallery-img">
+      </div>
+    </div>
+
   </section>
 
   <!-- SOCIAL STRIP -->

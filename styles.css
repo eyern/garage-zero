@@ -1713,3 +1713,199 @@ footer {
     font-size: 2.8rem
   }
 }
+
+/* Core Section Setup */
+.gallery-section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+
+.gallery-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+/* The Responsive Grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px; /* Space between grid items */
+}
+
+/* Card Elements */
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  aspect-ratio: 3 / 2; /* Keeps all cards uniform */
+}
+
+/* Image behavior */
+.gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Crops image cleanly to avoid distortion */
+  transition: transform 0.5s ease;
+}
+
+/* Hover Zoom Effect */
+.gallery-item:hover .gallery-img {
+  transform: scale(1.1);
+}
+
+/* Overlay Text Panel */
+.gallery-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s ease;
+}
+
+.gallery-overlay span {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: 2px solid #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+/* Hover Show Overlay */
+.gallery-item:hover .gallery-overlay {
+  opacity: 1;
+}
+
+/* --- Base Reset & Typography --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* --- Section Container --- */
+.services-section {
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.services-container {
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* --- Section Header --- */
+.services-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.services-header h2 {
+  font-size: 2.0rem;
+  color: #111111;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.services-header p {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, .5);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* --- Responsive Layout Grid --- */
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+/* --- Service Card Box --- */
+.service-card {
+  background-color: #ffffff;
+  flex: 1 1 calc(33.333% - 20px);
+  min-width: 290px;
+  max-width: 380px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Interaction: Box lifts off screen slightly */
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* --- Image Box Wrapper --- */
+.service-image-box {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+.service-image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+/* Hover Interaction: Zooms photo inside box boundary */
+.service-card:hover .service-image-box img {
+  transform: scale(1.1);
+}
+
+/* --- Text Content Box --- */
+.service-content {
+  padding: 25px;
+}
+
+.service-content h3 {
+  font-size: 1.2rem;
+  color: #E8000D;
+  margin-bottom: 12px;
+}
+
+.service-content p {
+  font-size: 0.95rem;
+  color: #696969;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 992px) {
+  .service-card {
+      flex: 1 1 calc(50% - 20px); /* 2 Columns on Medium screens */
+  }
+}
+
+@media (max-width: 650px) {
+  .services-header h2 {
+      font-size: 2rem;
+  }
+  .service-card {
+      flex: 1 1 100%; /* 1 Column on Mobile screens */
+  }
+}
